@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emprendimiento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Logo -->
+        <div class="logo-container">
+            <img src="icono.jpeg" alt="Logo de Tés Naturales" class="logo">
+        </div>
+        <h1>Emprendimiento</h1>
+        <p>Aquí encontrarás el poder de nuestro té puede compartir con tu bienestar.</p>
+    </header>
+    <div class="container">
+        <div class="tea-selection">
+            <button onclick="showTea('manzanilla')">Manzanilla</button>
+            <button onclick="showTea('menta')">Menta</button>
+            <button onclick="showTea('yerbanis')">Yerbanís</button>
+            <button onclick="showTea('bugambilia')">Bugambilia</button>
+        </div>
+        <div class="image-carousel">
+            <img id="tea-image" src="img1.jpeg" alt="Imagen del té">
+            <div class="carousel-controls">
+                <button onclick="previousImage()">◀</button>
+                <button onclick="nextImage()">▶</button>
+            </div>
+        </div>
+        <div class="tea-info">
+            <h3>Ingredientes</h3>
+            <p id="ingredients-text"></p>
+            <h3>Historia</h3>
+            <p id="story-text"></p>
+        </div>
+    </div>
+    <footer>
+        <p>Nos encantaría saber cómo te ha funcionado nuestro producto, ¿podrías compartir tu experiencia?</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
